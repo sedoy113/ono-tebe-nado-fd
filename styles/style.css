@@ -38,18 +38,14 @@
 }
 
 /* header */
-.header__container {
+.header {
 	padding: 88px 50px 88px 50px;
-}
-
-.header__grid {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	column-gap: 36px;
 }
-
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -123,15 +119,7 @@
 
 .cover {
 	position: relative;
-
-	min-height: 757px;
-	background-image: url("../images/cover.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
-}
-
-.cover__container {
+	background: url("../images/cover.jpg") no-repeat center / cover;
 	padding: 165px 50px 51px 50px;
 }
 
@@ -187,7 +175,7 @@
 
 /* lots */
 
-.lots__container {
+.lots {
 	padding: 179px 24px 176px 24px;
 }
 
@@ -228,7 +216,7 @@
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 }
 
 .card--film {
@@ -272,21 +260,13 @@
 	color: #000;
 }
 
-.lots__link--decorate::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background-color: #000;
-	width: 100%;
-	height: 1px;
+.lots__link--decorate {
+	text-decoration: underline #000;
 }
 
 /* about */
-.about__container {
+.about {
 	padding: 0 24px 0 24px;
-}
-.about__grid {
 	display: grid;
 	grid-template-columns: 334px 1fr;
 }
@@ -335,11 +315,8 @@
 }
 
 /* footer */
-.footer__container {
+.footer {
 	padding: 0 50px 88px 50px;
-}
-
-.footer__block-wrap {
 	display: flex;
 	justify-content: space-between;
 }
@@ -352,7 +329,6 @@
 }
 
 .social__link {
-	display: flex;
 	width: 48px;
 	height: 48px;
 }
