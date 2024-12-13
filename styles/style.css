@@ -30,14 +30,11 @@
 }
 
 /* overlay */
-
-.overlay::after {
-	content: "";
+.overlay {
 	position: absolute;
-	inset: 0;
-	background-color: #000;
-	opacity: 0.6;
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 0;
+	inset: 0;
 }
 
 /* header */
